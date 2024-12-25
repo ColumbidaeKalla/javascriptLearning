@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+    <button onclick="
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick="
+        /*cartQuantity = cartQuantity + 1; //This increase value by 1 and store to cartQuantity variable.
+        cartQuantity += 1; //this do the same*/
+        cartQuantity++; // this do the same
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Add to Cart</button>
+    
+    <button onclick="
+        /*cartQuantity = cartQuantity + 2; //This increase value by 1 and store to cartQuantity variable.*/
+        cartQuantity += 2; //this do the same
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+2</button>
+
+    <button onclick="
+        /*cartQuantity = cartQuantity + 3; //This increase value by 1 and store to cartQuantity variable.*/
+        cartQuantity += 3; //this do the same*/
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+3</button>
+
+    <button onclick="
+        cartQuantity += 4;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+4</button>
+    
+    <button onclick="
+        cartQuantity += 5;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+5</button>
+
+    <button onclick="
+        cartQuantity -= 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">-2</button>
+    
+    <button onclick="
+        cartQuantity -= 3;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">-3</button>
+
+    <button onclick="
+        cartQuantity--;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Remove from cart</button>
+
+    <button onclick="
+        cartQuantity = 0;
+        console.log('Cart was reset.');
+        console.log(`Cart Quantity: ${cartQuantity}`);
+    ">Reset Cart</button>
+
+    <script>
+        /*
+        Naming Convention
+        camelCase   cartQuantity // JS variable should be in camelCase
+        PascalCase  CartQuantity
+        kebab-case  cart-quantity //doesn't using in JS, use in HTML & CSS
+        snake_case  cart_quantity //doesn't really use in JS
+        */
+
+        let cartQuantity = 0;
+    </script>
+</body>
+</html>
